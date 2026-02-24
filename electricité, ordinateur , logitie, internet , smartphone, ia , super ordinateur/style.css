@@ -18,7 +18,7 @@
 
         .intro {
             font-size: 1.2rem;
-            background: #e9ecef;
+            background: #34db4d;
             padding: 20px;
             border-radius: 8px;
             margin: 30px 0;
@@ -26,30 +26,19 @@
 
         h2 {
             color: #2c3e50;
-            border-left: 5px solid #3498db;
+            border-left: 10px solid #34db4d;
             padding-left: 15px;
             margin-top: 40px;
         }
 
-        .chiffre {
-            background: #f1f9ff;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-weight: bold;
-            border: 1px solid #3498db;
-        }
+        
 
-        hr {
-            margin: 40px 0;
-            border: 0;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #333, transparent);
-        }
+       
 
         footer {
             text-align: center;
             margin-top: 50px;
-            padding: 20px;
+            padding: 10px;
             color: #666;
             font-style: italic;
         }
