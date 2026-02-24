@@ -1,6 +1,7 @@
+// script.js - Version ultra simplifiée pour comprendre
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Je récupère tous mes boutons
+    // Étape 1: Je récupère tous mes boutons
     let boutonOrange = document.querySelector('.btn-orange');
     let boutonBleu = document.querySelector('.btn-bleu');
     let boutonRouge = document.querySelector('.btn-rouge');
@@ -8,40 +9,40 @@ document.addEventListener('DOMContentLoaded', function() {
     let boutonJaune = document.querySelector('.btn-jaune');
     let messageBox = document.getElementById('message-confirmation');
     
-    // Je dis à chaque bouton quoi faire quand on clique
+    // Étape 2: Je dis à chaque bouton quoi faire quand on clique
     
     // Pour le bouton ORANGE
     boutonOrange.onclick = function() {
         document.body.style.backgroundColor = 'orange';
-        messageBox.innerHTML = " Tu as vu? le fond est devenu <strong style='color: orange;'>ORANGE</strong>! <br> Essaie une autre couleur.";
+        messageBox.innerHTML = "🍊 C'est orange! Le fond a changé!";
         messageBox.style.display = 'block';
     };
     
     // Pour le bouton BLEU
     boutonBleu.onclick = function() {
         document.body.style.backgroundColor = 'blue';
-        messageBox.innerHTML = " Tu as vu? le fond est devenu <strong style='color: blue;'>BLEU</strong>! <br> Essaie une autre couleur.";
+        messageBox.innerHTML = "💧 C'est bleu! Le fond a changé!";
         messageBox.style.display = 'block';
     };
     
     // Pour le bouton ROUGE
     boutonRouge.onclick = function() {
         document.body.style.backgroundColor = 'red';
-        messageBox.innerHTML = " Tu as vu? le fond est devenu <strong style='color: red;'>ROUGE</strong>! <br> Essaie une autre couleur.";
+        messageBox.innerHTML = "❤️ C'est rouge! Le fond a changé!";
         messageBox.style.display = 'block';
     };
     
     // Pour le bouton VERT
     boutonVert.onclick = function() {
         document.body.style.backgroundColor = 'green';
-        messageBox.innerHTML = " Tu as vu? le fond est devenu <strong style='color: green;'>VERT</strong>! <br> Essaie une autre couleur.";
+        messageBox.innerHTML = "🌿 C'est vert! Le fond a changé!";
         messageBox.style.display = 'block';
     };
     
     // Pour le bouton JAUNE
     boutonJaune.onclick = function() {
         document.body.style.backgroundColor = 'gold';
-        messageBox.innerHTML = " Tu as vu? le fond est devenu <strong style='color: gold;'>JAUNE</strong>! <br> Essaie une autre couleur.";
+        messageBox.innerHTML = "⭐ C'est jaune! Le fond a changé!";
         messageBox.style.display = 'block';
     };
 });
