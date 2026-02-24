@@ -1,0 +1,100 @@
+
+        /* Styles de base */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Barre du haut */
+        .header {
+            background-color: #0c0101;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        /* le Main */
+        .contenu {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        
+        /* Style du texte */
+        .main-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #160d0d;
+        }
+        
+        /* zone boutons */
+        .zone-boutton {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        /* les boutons 
+       
+
+        .btn- {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+            */
+
+         .btn-orange {
+            padding: 12px 24px; 
+        }
+        
+        .btn-bleu {
+            padding: 12px 24px; 
+        }
+
+        .btn-rouge {
+            padding: 12px 24px; 
+        }
+
+        .btn-vert {
+            padding: 12px 24px; 
+        }
+
+        .btn-jaune {
+            padding: 12px 24px; 
+        }
+
+
+        /* Styles pour la zone de message (en bas des boutons) */
+.message-box {
+    margin-top: 30px;           /* Espace après les boutons */
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    min-height: 60px;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+    line-height: 1.6;
+   
+}
+
+
+
+/* Style pour le mot en couleur dans le message */
+.message-box strong {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+
+        
