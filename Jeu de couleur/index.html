@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cache Couleur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="jeu">
+        <h1> LE CACHE COULEUR</h1>
+        
+        <div class="instruction">
+            <p>Connais-tu les couleurs ?</p> <p>Dis-moi où se trouve le carré de la couleur indiquée !</p>
+            <div id="couleurADeviner">?</div>
+        </div>
+        
+        <div class="carres">
+            <div class="carre jaune" data-couleur="jaune"></div>
+            <div class="carre rouge" data-couleur="rouge"></div>
+            <div class="carre bleu" data-couleur="bleu"></div>
+            <div class="carre vert" data-couleur="vert"></div>
+        </div>
+        
+        <div id="message">Clique sur une couleur !</div>
+        <button onclick="resetJeu()"> Nouvelle partie</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

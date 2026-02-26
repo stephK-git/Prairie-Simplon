@@ -1,0 +1,129 @@
+body {
+            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            transition: background 0.3s;
+        }
+        
+        .jeu {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin: 0 0 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .instruction {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            margin: 20px 0;
+            border-left: 5px solid #667eea;
+        }
+        
+        #couleurADeviner {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            text-transform: uppercase;
+            background: #f0f0f0;
+            padding: 5px 20px;
+            border-radius: 50px;
+            display: inline-block;
+        }
+        
+        .carres {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .carre {
+            width: 120px;
+            height: 120px;
+            cursor: pointer;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 3px solid white;
+        }
+        
+        .carre:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        
+        .carre:active {
+            transform: scale(0.95);
+        }
+        
+        .jaune { background: #f1c40f; }
+        .rouge { background: #e74c3c; }
+        .bleu { background: #3498db; }
+        .vert { background: #2ecc71; }
+        
+        #message {
+            font-size: 1.3em;
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            font-weight: 500;
+        }
+        
+        .success {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .error {
+            color: #c0392b;
+            font-weight: bold;
+        }
+        
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .flash {
+            animation: flashRed 0.3s;
+        }
+        
+        @keyframes flashRed {
+            0% { background: white; }
+            50% { background: #ff6b6b; }
+            100% { background: white; }
+        }
