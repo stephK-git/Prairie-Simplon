@@ -21,7 +21,7 @@
         L'utilisation d'une API n'est pas systématique, elle répond à des besoins stratégiques précis.
     </p>
 
-    <h3>1. Les scénarios d'utilisation</h3>
+    <h3>I. Les scénarios d'utilisation</h3>
     <p>On intègre généralement une API dans trois situations majeures :</p>
     <ul>
         <li><strong>Déléguer la complexité technique :</strong> Si une fonctionnalité demande une expertise ou des ressources que vous n'avez pas en interne, l'API prend le relais. Par exemple, utiliser Stripe évite de gérer la sécurité bancaire complexe, et intégrer Google Maps évite de modéliser le monde entier.</li>
@@ -29,13 +29,13 @@
         <li><strong>Accéder à des données dynamiques externes :</strong> Si votre application a besoin d'informations en temps réel, comme la météo via OpenWeather ou l'affichage des derniers tweets via l'API de X (Twitter).</li>
     </ul>
 
-    <h3>2. Le dilemme : Utiliser l'existant ou créer sa propre API ?</h3>
+    <h3>II. Le dilemme : Utiliser l'existant ou créer sa propre API ?</h3>
     <ul>
         <li><strong>Quand utiliser une API tierce ?</strong> C'est le choix de la rapidité et de la conformité. Idéal pour un MVP (produit minimum viable) ou pour des services critiques comme le paiement et l'authentification (Google Login, Auth0), où les normes de sécurité (RGPD, PCI-DSS) sont gérées pour vous.</li>
         <li><strong>Quand créer sa propre API ?</strong> C'est le choix du contrôle. Vous devez construire la vôtre pour manipuler votre propre logique métier unique, sécuriser vos données propriétaires et garantir des performances maximales. À long terme, c'est aussi un choix économique : les API tierces deviennent coûteuses à mesure que votre trafic augmente.</li>
     </ul>
 
-    <h2>II. CHECKLIST : LES POINTS DE VIGILANCE AVANT L'INTÉGRATION</h2>
+    <h2>III. LES POINTS DE VIGILANCE AVANT L'INTÉGRATION</h2>
     <p>Avant d'écrire la première ligne de code, une évaluation rigoureuse s'impose :</p>
     <ul>
         <li><strong>La Documentation (Critère n°1) :</strong> Une API sans documentation claire, avec des exemples de code et une liste des erreurs possibles, transformera votre intégration en calvaire.</li>
@@ -45,7 +45,7 @@
         <li><strong>Pérennité :</strong> L'API est-elle maintenue ? Une communauté active et un support technique réactif sont des filets de sécurité indispensables.</li>
     </ul>
 
-    <h2>III. LE MARCHÉ DES API : TENDANCES ET DÉCLIN</h2>
+    <h2>IV. LE MARCHÉ DES API : TENDANCES ET DÉCLIN</h2>
     <p>Le monde des API est en constante mutation. Certaines technologies explosent tandis que d'autres deviennent obsolètes.</p>
 
     <h3>1. Le Top du Moment : L'ère de l'intelligence</h3>
@@ -62,7 +62,7 @@
         <li><strong>API "maison" non documentées :</strong> Avec des outils comme FastAPI ou Swagger, les développeurs n'acceptent plus de perdre du temps à "deviner" le fonctionnement d'un endpoint.</li>
     </ul>
 
-    <h2>IV. COMPRÉHENSION TECHNIQUE : LE CYCLE REQUÊTE-RÉPONSE</h2>
+    <h2>V. COMPRÉHENSION TECHNIQUE : LE CYCLE REQUÊTE-RÉPONSE</h2>
     <p>Pour bien utiliser une API, il faut comprendre son fonctionnement interne basé sur le protocole HTTP.</p>
     <p><strong>L'échange standardisé :</strong></p>
     <ul>
