@@ -4,7 +4,7 @@ sonFond.volume = 0.3;
 sonFond.play().catch(e => console.log('Autoplay bloqué'));
 
 // Son pour les mauvais choix
-const sonErreur = new Audio('https://www.soundjay.com/misc/sounds/fail-buzzer-01.mp3');
+const sonErreur = new Audio('erreur.mp3');
 
 const sons = {
     jaune: new Audio('https://www.soundjay.com/misc/sounds/bell-ringing-02.mp3'),
