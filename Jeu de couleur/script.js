@@ -1,5 +1,5 @@
 // Sons
-const sonFond = new Audio('https://www.soundjay.com/misc/sounds/bell-ringing-01.mp3');
+const sonFond = new Audio('Sleep Instantly Within 3 Minutes ♥ Sleep Music for Babies ♫ Mozart Brahms Lullaby [flJo10TDHcU].mp3');
 sonFond.volume = 0.3;
 sonFond.play().catch(e => console.log('Autoplay bloqué'));
 
@@ -7,10 +7,10 @@ sonFond.play().catch(e => console.log('Autoplay bloqué'));
 const sonErreur = new Audio('erreur.mp3');
 
 const sons = {
-    jaune: new Audio('https://www.soundjay.com/misc/sounds/bell-ringing-02.mp3'),
-    rouge: new Audio('https://www.soundjay.com/misc/sounds/bell-ringing-03.mp3'),
-    bleu: new Audio('https://www.soundjay.com/misc/sounds/bell-ringing-04.mp3'),
-    vert: new Audio('https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3')
+    jaune: new Audio('Cloche de ring de boxe ,boxing ring bell sound effect #soundeffect #bruitage.mp3'),
+    rouge: new Audio('Cloche de ring de boxe ,boxing ring bell sound effect #soundeffect #bruitage.mp3'),
+    bleu: new Audio('Cloche de ring de boxe ,boxing ring bell sound effect #soundeffect #bruitage.mp3'),
+    vert: new Audio('Cloche de ring de boxe ,boxing ring bell sound effect #soundeffect #bruitage.mp3')
 };
 
 // Variables du jeu
@@ -37,13 +37,16 @@ carres.forEach(carre => {
             message.innerHTML = '<span class="success"> Félicitation tu as trouvé !</span>';
             
             couleurs = couleurs.filter(c => c !== aTrouver);
+                    
+                    if (couleurs.length > 0) {
+            // Mélange simple des positions
+            let parent = document.querySelector('.carres');
+            let enfants = parent.children;
             
-            if (couleurs.length > 0) {
-                // Mélange aléatoire des positions
-                let parent = document.querySelector('.carres');
-                for (let i = parent.children.length; i >= 0; i--) {
-                    parent.appendChild(parent.children[Math.random() * i | 0]);
-                }
+            // Prend chaque enfant et le met à une position aléatoire
+            for(let i = 0; i < enfants.length; i++) {
+                parent.appendChild(enfants[Math.floor(Math.random() * enfants.length)]);
+            }
                 
                 aTrouver = couleurs[Math.floor(Math.random() * couleurs.length)];
                 spanCouleur.textContent = aTrouver;
