@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Veille du 24</title>
+</head>
+<body>
+    <h1>BASES DE DONNÉES : MYSQL, SQLITE ET MONGODB</h1>
+
+    <p class="intro">Toute application numérique repose sur un système de gestion de données. Mais face à la diversité des besoins actuels, choisir le bon outil est devenu une décision stratégique. MySQL, SQLite et MongoDB représentent trois philosophies distinctes : voici comment les comprendre et les choisir.</p>
+
+    <h2>1. Contexte : l'évolution des bases de données</h2>
+    <p>Une base de données est un ensemble structuré d'informations stockées électroniquement, permettant de gérer, rechercher et mettre à jour des données de façon efficace. Toute application moderne repose sur un ou plusieurs systèmes de gestion de bases de données, que l'on appelle SGBD.</p>
+    <p>L'histoire de ces systèmes se déroule en quatre temps. Les années 1960 voient naître les premières bases hiérarchiques sur mainframes. Les décennies suivantes consacrent la révolution SQL avec l'invention du modèle relationnel. Dans les années 2000, l'explosion du Web et du Big Data pousse au développement de bases NoSQL, plus flexibles et capables d'absorber des volumes massifs. Aujourd'hui, la tendance est à l'approche polyglotte : SQL et NoSQL coexistent et se complètent au sein d'une même application.</p>
+
+    <h2>2. Présentation des trois systèmes</h2>
+    <p>MySQL est un système de gestion de bases de données relationnelles open source. Il organise les données en tables composées de lignes et de colonnes, reliées entre elles par des clés primaires et étrangères. Son langage est le SQL, standard de l'industrie depuis cinquante ans. Il s'est imposé comme la solution de référence pour les sites web classiques, notamment grâce à sa compatibilité native avec les CMS comme WordPress. Ses atouts sont sa rapidité pour les opérations de lecture simple, sa facilité de prise en main et son support universel par tous les hébergeurs. En revanche, son schéma fixe rend tout changement structurel sur une base volumineuse long et risqué.</p>
+    <p>SQLite occupe une place à part dans l'univers des bases relationnelles. Contrairement à MySQL, il ne fonctionne pas en mode client-serveur : il n'y a aucun serveur à installer ni à configurer. L'intégralité de la base de données est stockée dans un fichier unique intégré directement dans l'application. Cette architecture minimaliste lui confère une portabilité totale et une intégration native dans Python, Android et iOS. Pour le développement local, le prototypage rapide ou les applications mobiles légères, il représente le choix le plus pragmatique. Il n'est cependant pas adapté aux accès concurrents massifs ni aux volumes dépassant quelques gigaoctets.</p>
+    <p>MongoDB est une base de données NoSQL orientée documents. Les données y sont stockées sous forme de documents au format JSON, regroupés dans des collections. Il n'existe pas de schéma fixe : chaque document peut avoir sa propre structure, et de nouveaux champs peuvent être ajoutés à tout moment sans migration complexe. Son atout majeur est la scalabilité horizontale native. Grâce au sharding, la répartition automatique des données sur plusieurs serveurs, MongoDB est conçu pour absorber une croissance massive sans changer d'architecture. Ses limites sont une moindre performance sur les jointures complexes et une consommation mémoire plus élevée.</p>
+
+    <h2>3. Comparaison des trois systèmes</h2>
+    <p>MySQL et SQLite partagent le même modèle relationnel avec le langage SQL standard. La différence tient à l'architecture : MySQL fonctionne en mode serveur tandis que SQLite est embarqué dans l'application. MongoDB rompt avec cette logique en proposant des collections de documents JSON sans schéma imposé, ce qui change fondamentalement la façon de modéliser et d'interroger les données.</p>
+    <p>Sur le plan de la scalabilité, MySQL et SQLite évoluent en scalabilité verticale en augmentant la puissance du serveur. SQLite ne supporte pas du tout la scalabilité réseau. MongoDB est architecturé pour la scalabilité horizontale : on multiplie les serveurs plutôt que d'en améliorer un seul.</p>
+    <p>En matière de fiabilité, MySQL offre un support complet des transactions ACID, garantissant l'intégrité des données même en cas de panne. SQLite implémente également les transactions ACID de façon simplifiée. MongoDB les supporte depuis la version 4.0, mais leur gestion reste plus complexe. Pour toute application où la cohérence des données est critique, comme la finance ou la comptabilité, SQL reste le choix le plus sûr.</p>
+    <p>Sur le plan du coût, MySQL est généralement la solution la moins coûteuse à héberger. SQLite est encore plus léger puisqu'il ne nécessite aucun serveur dédié. MongoDB peut devenir coûteux en RAM car il maintient en mémoire les index et les données fréquemment accédées afin de garantir des temps de réponse rapides.</p>
+
+    <h2>4. Cas d'usage : quand choisir quel système ?</h2>
+    <p>MySQL s'impose pour les applications dont la structure de données est stable et où la fiabilité transactionnelle est primordiale. Les systèmes bancaires et financiers en sont l'exemple le plus évident : on ne peut pas se permettre de perdre une opération ou d'avoir une incohérence dans un livre de comptes. Les sites e-commerce doivent garantir que si un paiement échoue, la commande n'est pas validée. Les systèmes de réservation bénéficient du verrouillage SQL pour éviter les doubles réservations. Les logiciels de gestion d'entreprise comme les ERP et CRM, qui manipulent des données fortement structurées avec des relations complexes entre clients, produits et factures, trouvent dans MySQL une base solide.</p>
+    <p>SQLite est la solution idéale dès lors qu'un serveur n'est ni utile ni souhaitable : développement local, applications mobiles, logiciels de bureau ou petites applications monoposte.</p>
+    <p>MongoDB s'impose lorsque les données sont hétérogènes, volumineuses ou appelées à évoluer rapidement. Les réseaux sociaux en sont l'illustration parfaite : gérer des millions de relations entre utilisateurs requiert à la fois flexibilité et performance d'écriture. La gestion de profils utilisateurs est un autre cas typique, car tous les utilisateurs n'ont pas les mêmes champs. Les applications IoT, les plateformes de Big Data et les APIs REST modernes tirent également pleinement parti de MongoDB.</p>
+
+    <h2>5. L'architecture polyglotte : le standard d'aujourd'hui</h2>
+    <p>Les applications modernes combinent SQL et NoSQL selon les besoins de chaque composant. Prenons l'exemple d'un site e-commerce : son frontend en React communique avec un backend Node.js, qui s'appuie sur plusieurs bases. Les données transactionnelles comme les utilisateurs, commandes et paiements sont confiées à MySQL pour leurs garanties ACID. Le catalogue produits, avec ses spécifications variables selon les catégories, est stocké dans MongoDB pour sa flexibilité. Les sessions utilisateurs et les données de cache sont gérées par Redis, une base NoSQL de type clé-valeur conçue pour la vitesse.</p>
+    <p>Ce modèle hybride illustre la logique contemporaine : ne pas opposer SQL et NoSQL, mais les faire coopérer. Chaque composant de l'application utilise le système le mieux adapté à sa nature et à ses contraintes de performance.</p>
+
+    <h2>Conclusion</h2>
+    <p>MySQL, SQLite et MongoDB représentent trois philosophies différentes de la gestion des données. MySQL excelle dans les contextes où la structure est stable et la fiabilité transactionnelle critique. SQLite s'impose comme le compagnon idéal du développement local et des applications légères. MongoDB répond aux défis des applications modernes à grande échelle, avec des données hétérogènes et un besoin de scalabilité horizontale. En 2026, la maîtrise de ces trois outils est devenue une compétence fondamentale pour tout développeur, et l'approche polyglotte est désormais le standard de l'industrie.</p>
+
+    <footer>
+        <p>N'GUESSAN KASSI STEPHANE</p>
+        <p>2026</p>
+    </footer>
+</body>
+</html>
