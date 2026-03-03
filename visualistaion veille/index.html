@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Veille Visualisation</title>
+</head>
+<body>
+    <h1>ANALYSE ET VISUALISATION DES DONNÉES</h1>
+
+    <p class="intro">L'analyse et la visualisation des données sont les deux piliers qui permettent de transformer des chiffres bruts en récits compréhensibles et exploitables. Si l'analyse extrait la substance, la visualisation lui donne une voix.
+                        quels sont les concepts clés et des outils leaders du marché actuel?</p>
+
+    <h2>Définition</h2>
+    <p>L'analyse des données est le processus qui consiste à examiner, nettoyer, transformer et modéliser des données brutes dans le but de découvrir des informations utiles, de tirer des conclusions et d'appuyer la prise de décision. La visualisation des données, quant à elle, est la représentation graphique de ces informations pour les rendre plus lisibles et compréhensibles.</p>
+
+    <h2>Rôle de l'analyse et de la visualisation des données</h2>
+    <p>L'analyse et la visualisation des données permettent aux organisations de mieux comprendre leurs performances, d'identifier des tendances, de détecter des anomalies et de prendre des décisions éclairées. Elles transforment des chiffres bruts en insights visuels accessibles à tous, qu'il s'agisse de développeurs, de managers ou de clients.</p>
+
+    <h2>Les étapes clés de l'analyse des données</h2>
+    <p><strong>1. La collecte des données :</strong> On récupère les données depuis différentes sources : bases de données, fichiers CSV, APIs, capteurs, formulaires web, etc.</p>
+    <p><strong>2. Le nettoyage des données :</strong> On supprime les doublons, on corrige les erreurs, on gère les valeurs manquantes. C'est l'étape la plus longue mais la plus importante : des données de mauvaise qualité produisent des analyses fausses.</p>
+    <p><strong>3. L'exploration des données (EDA) :</strong> On examine les données pour comprendre leur structure, leurs distributions et leurs relations. On calcule des moyennes, des médianes, des écarts-types et on repère les valeurs aberrantes.</p>
+    <p><strong>4. L'analyse et la modélisation :</strong> On applique des méthodes statistiques ou des algorithmes pour répondre à des questions précises : tendances, corrélations, prévisions.</p>
+    <p><strong>5. La visualisation et la communication :</strong> On traduit les résultats en graphiques clairs et interactifs pour les partager avec les équipes ou les clients.</p>
+
+    <h2>Les 4 types d'analyse</h2>
+    <p><strong>1. L'analyse descriptive :</strong> Que s'est-il passé ? C'est le niveau le plus fondamental. Elle résume les données passées pour comprendre ce qui s'est produit. Elle repose sur des indicateurs simples comme les moyennes, les totaux ou les pourcentages. Exemple : le chiffre d'affaires du mois dernier était de 50 000 €.</p>
+    <p><strong>2. L'analyse diagnostique :</strong> Pourquoi cela s'est-il passé ? Elle va plus loin en cherchant les causes d'un phénomène observé. On compare des périodes, on croise des variables, on identifie des corrélations. Exemple : les ventes ont baissé en décembre à cause d'une rupture de stock sur le produit phare.</p>
+    <p><strong>3. L'analyse prédictive :</strong> Que va-t-il se passer ? Elle utilise des modèles statistiques et du machine learning pour anticiper des événements futurs à partir des données historiques. Exemple : sur la base des tendances passées, les ventes devraient augmenter de 15 % au prochain trimestre.</p>
+    <p><strong>4. L'analyse prescriptive :</strong> Que faut-il faire ? C'est le niveau le plus avancé. Elle ne se contente pas de prédire, elle recommande des actions concrètes pour optimiser un résultat. Exemple : pour maximiser les ventes, il faut augmenter le budget publicitaire sur le segment 25-35 ans.</p>
+
+    <h2>Les formats de données courants</h2>
+    <p><strong>CSV (Comma-Separated Values) :</strong> Format texte simple où les données sont séparées par des virgules. C'est le format le plus universel pour l'échange de données tabulaires. Léger et lisible par n'importe quel tableur ou langage de programmation, mais limité pour les structures complexes.</p>
+    <p><strong>JSON (JavaScript Object Notation) :</strong> Format structuré en paires clé-valeur, très utilisé dans les APIs et les applications web. Il supporte les structures imbriquées et hiérarchiques, ce qui le rend plus flexible que le CSV pour représenter des données complexes.</p>
+    <p><strong>XML (eXtensible Markup Language) :</strong> Format balisé historiquement très utilisé dans les systèmes d'entreprise et les échanges entre applications. Plus verbeux que le JSON, il tend à être remplacé par ce dernier dans les nouveaux projets, mais reste présent dans les systèmes legacy.</p>
+    <p><strong>Parquet :</strong> Format de stockage en colonnes, optimisé pour l'analyse de grandes quantités de données. Très utilisé dans les environnements Big Data (Hadoop, Spark). Il compresse les données efficacement et permet de lire uniquement les colonnes nécessaires, ce qui le rend bien plus rapide que le CSV pour l'analytique.</p>
+
+    <h2>La notion de pipeline de données</h2>
+    <p>Un pipeline de données est une séquence automatisée d'étapes qui permet de collecter, transformer et acheminer les données d'une source vers une destination. Il est composé de trois grandes phases : l'ingestion des données (récupération depuis les sources), la transformation (nettoyage, enrichissement, agrégation) et le chargement vers la destination finale (base de données, entrepôt de données, outil de visualisation). Les pipelines permettent de traiter les données de manière fiable, répétable et sans intervention manuelle. Des outils comme Apache Airflow, dbt ou Luigi sont couramment utilisés pour orchestrer ces pipelines.</p>
+
+    <h2>Les types de graphiques et leur usage</h2>
+    <p><strong>Graphique en barres :</strong> pour comparer des catégories entre elles (ex : chiffre d'affaires par région).</p>
+    <p><strong>Graphique en courbes :</strong> pour visualiser une évolution dans le temps (ex : nombre de visiteurs par mois).</p>
+    <p><strong>Graphique en secteurs (camembert) :</strong> pour représenter des proportions au sein d'un tout (ex : répartition du budget).</p>
+    <p><strong>Graphique en nuage de points (scatter) :</strong> pour identifier des corrélations entre deux variables (ex : relation entre âge et salaire).</p>
+    <p><strong>Graphique radar :</strong> pour comparer plusieurs dimensions d'un même sujet (ex : évaluation des compétences d'un employé).</p>
+    <p><strong>Heatmap :</strong> pour visualiser la densité ou l'intensité de données sur une grille (ex : heures de pointe sur un site web).</p>
+    <p><strong>Diagramme de Sankey :</strong> pour représenter des flux et leurs proportions (ex : parcours utilisateur sur un site).</p>
+    <p><strong>Candlestick (chandeliers) :</strong> pour visualiser l'évolution des prix financiers sur une période.</p>
+
+    <h2>Visualisation statique vs visualisation interactive</h2>
+    <p>La visualisation statique produit des images fixes, exportables en PNG ou PDF. Elle est adaptée aux rapports imprimés, aux présentations PowerPoint ou aux emails. Elle est simple à produire mais ne permet pas à l'utilisateur d'explorer les données par lui-même.</p>
+    <p>La visualisation interactive permet à l'utilisateur de zoomer, filtrer, survoler les points pour obtenir des détails, ou encore de sélectionner des plages de données. Elle est idéale pour les dashboards web et les outils d'exploration. Elle demande plus de développement mais offre une expérience bien plus riche et engageante.</p>
+
+    <h2>Les bonnes pratiques de visualisation</h2>
+    <p><strong>Choisir le bon type de graphique :</strong> Chaque type de graphique répond à un besoin précis. Un camembert ne doit pas contenir plus de 5 ou 6 catégories, sinon il devient illisible. Une courbe est toujours préférable à des barres pour représenter une évolution temporelle.</p>
+    <p><strong>Soigner les couleurs :</strong> Les couleurs doivent avoir un sens et ne pas être choisies au hasard. Il faut éviter les combinaisons rouge/vert qui posent problème aux daltoniens, et privilégier des palettes accessibles. Une bonne règle est de ne pas utiliser plus de 5 ou 6 couleurs distinctes sur un même graphique.</p>
+    <p><strong>Épurer au maximum :</strong> Un graphique efficace est un graphique épuré. Il faut supprimer tout ce qui ne porte pas d'information : les grilles inutiles, les bordures superflues, les légendes redondantes. Moins il y a d'éléments visuels parasites, plus le message est clair.</p>
+    <p><strong>Toujours contextualiser :</strong> Un graphique sans titre, sans unités et sans source est inutilisable. Il faut toujours indiquer ce que l'on mesure, dans quelle unité, sur quelle période et d'où proviennent les données.</p>
+    <p><strong>Adapter au public :</strong> Un graphique destiné à un directeur financier ne sera pas le même que celui destiné à un data scientist. Le premier privilégiera la simplicité et les KPIs clés, le second pourra intégrer plus de détails et de complexité.</p>
+
+    <h2>La notion de dashboard</h2>
+    <p>Un dashboard (tableau de bord) est une interface visuelle regroupant plusieurs graphiques et indicateurs sur une même page, offrant une vue d'ensemble d'un sujet en temps réel ou sur une période donnée. Il est composé de plusieurs éléments : les KPIs (indicateurs clés affichés sous forme de chiffres mis en valeur), les graphiques d'évolution, les filtres interactifs permettant de segmenter les données, et les tableaux de détail pour les utilisateurs souhaitant aller plus loin. Un bon dashboard répond à une question précise et permet à son lecteur de comprendre la situation en moins de 30 secondes.</p>
+
+    <h2>Les 2 bibliothèques principales</h2>
+    <p><strong>Chart.js : La "Légèreté et Simplicité"</strong><br>
+    Chart.js est une bibliothèque JavaScript open source, légère et facile à intégrer directement dans une page web. Elle est particulièrement adaptée aux projets web où l'on souhaite créer des graphiques interactifs sans complexité excessive.<br>
+    <em>Avantages :</em> Très facile à prendre en main, même pour les débutants. Elle s'intègre directement en HTML avec une simple balise &lt;canvas&gt;. Sa documentation est claire et sa communauté est large. Les graphiques sont animés par défaut, ce qui améliore l'expérience utilisateur.<br>
+    <em>Inconvénients :</em> Moins adaptée aux visualisations très complexes ou aux grandes quantités de données. Les options de personnalisation avancées peuvent rapidement devenir fastidieuses à configurer.<br>
+    <em>Cas d'usage :</em> Dashboards web, rapports de performance, sites e-commerce affichant des statistiques de vente, applications grand public.</p>
+
+    <p><strong>Plotly : Le "Complexité Interactive"</strong><br>
+    Plotly est une bibliothèque de visualisation disponible en JavaScript, Python et R. Elle est conçue pour produire des graphiques hautement interactifs et des visualisations scientifiques ou analytiques avancées.<br>
+    <em>Avantages :</em> Offre une grande richesse de types de graphiques (3D, géographiques, financiers, scientifiques). Les graphiques sont nativement interactifs : zoom, survol, filtres, export en image, tout est inclus sans configuration supplémentaire. Elle s'intègre parfaitement avec les outils d'analyse de données comme Pandas en Python.<br>
+    <em>Inconvénients :</em> Plus lourde que Chart.js, ce qui peut ralentir le chargement des pages. La courbe d'apprentissage est plus élevée, notamment pour les visualisations complexes.<br>
+    <em>Cas d'usage :</em> Analyse scientifique, finance, data science, tableaux de bord analytiques, applications nécessitant des graphiques 3D ou géographiques.</p>
+
+    <h2>Cas d'application : Quand utiliser Chart.js ou Plotly ?</h2>
+    <p><strong>Chart.js : Quand la simplicité et la rapidité de développement priment</strong></p>
+    <p>• Dashboards web classiques : Pour afficher des KPIs sous forme de graphiques en barres ou en courbes sur un tableau de bord d'entreprise.<br>
+    • Sites e-commerce : Pour visualiser les ventes mensuelles, le panier moyen ou le taux de conversion directement dans l'interface d'administration.<br>
+    • Applications éducatives : Pour afficher des résultats et progressions d'élèves de manière visuelle et animée.<br>
+    • Rapports automatisés : Pour générer des graphiques dynamiques intégrés dans des pages HTML envoyées par email ou consultées en ligne.</p>
+
+    <p><strong>Plotly : Quand la richesse visuelle et l'interactivité avancée sont nécessaires</strong></p>
+    <p>• Analyse financière : Pour afficher des chandeliers boursiers, des courbes de rentabilité ou des matrices de corrélation entre actifs.<br>
+    • Data Science et Machine Learning : Pour visualiser des distributions, des clusters, des matrices de confusion ou des courbes ROC directement depuis un notebook Python.<br>
+    • Géographie et cartographie : Pour afficher des données sur des cartes interactives (ex : répartition des ventes par pays ou densité de population).<br>
+    • Sciences et ingénierie : Pour représenter des données en 3D, des surfaces mathématiques ou des simulations physiques.</p>
+
+    <h2>Comparatif des bibliothèques</h2>
+    <p><strong>1. Facilité de prise en main :</strong> Chart.js est la plus accessible. Quelques lignes de JavaScript suffisent pour obtenir un graphique fonctionnel et animé. Plotly demande un investissement initial plus important mais offre des capacités bien supérieures.</p>
+    <p><strong>2. Interactivité :</strong> Plotly est nativement très interactif : zoom, pan, sélection, export en image, tout est inclus sans configuration supplémentaire. Chart.js propose une interactivité de base suffisante pour la majorité des cas courants.</p>
+    <p><strong>3. Richesse des types de graphiques :</strong> Plotly propose la bibliothèque la plus vaste : graphiques 3D, cartes géographiques, graphiques financiers, diagrammes de Sankey, etc. Chart.js couvre les types essentiels qui répondent à la grande majorité des besoins web.</p>
+    <p><strong>4. Performance :</strong> Chart.js est légère et rapide à charger, ce qui en fait le meilleur choix pour les applications web grand public. Plotly est plus lourde et peut impacter les performances sur des pages avec de nombreux graphiques.</p>
+    <p><strong>5. Coût et Licence :</strong> Toutes les bibliothèques citées sont open source et gratuites. Plotly propose cependant une offre commerciale payante (Dash Enterprise) pour les entreprises souhaitant des fonctionnalités avancées de déploiement et de sécurité.</p>
+
+    <footer>
+        <p>N'GUESSAN KASSI STEPHANE</p>
+        <p>2026</p>
+    </footer>
+</body>
+</html>
